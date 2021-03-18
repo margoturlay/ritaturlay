@@ -15,7 +15,6 @@ runs-on: ubuntu-latest
 steps:
 - name: clone repo
 uses: actions/checkout@v1
-
 - name: install valgrind and cpplint
 run: |
 sudo apt install -y valgrind
