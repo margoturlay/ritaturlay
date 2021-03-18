@@ -16,13 +16,9 @@ steps:
 - uses: actions/checkout@v1
 - name: install valgrind and cpplint
 run: |
-sudo apt install valgrind
+   sudo apt install valgrind
 sudo pip install cpplint
 
-- name: build and test
+- name: compiling and test
 run: |
-for d in */ ; do
-cd "$d"
-make
-cd ..
-done
+make -C lab1/
