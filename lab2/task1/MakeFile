@@ -1,0 +1,11 @@
+lab2task1.o: lab2task1.c
+	gcc -c lab2task1.c -std=c89
+
+functions.o: functions.c
+	gcc -c functions.c -std=c89
+
+lab2task1: lab2task1.o functions.o
+	gcc -o lab2task1 lab2task1.o functions.o -std=c89
+	rm -rf *.o
+
+all: lab2task1 
