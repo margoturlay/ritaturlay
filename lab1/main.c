@@ -15,10 +15,11 @@ int getsize(int x)
 
 int compare(int* arr1, int* arr2, int n)
 {
-    int i;
-    for(i = 0; i < n; i++)
+    int i = 0
+    while(i < n)
     {
         if(arr1[i] != arr2[i])
+            i++;
             return 0;
     }
     return 1;
@@ -56,18 +57,20 @@ int* task1(int x)
 {
 
     int size = 0;
-    int i;
-    for(i = 1; i <= x; i++)
+    int i = 1;
+    while(i <= x)
     {
         if(isSymmetrical(i))
             size++;
+        i++;
     }
     int* arr = (int*)malloc(size * sizeof(int));
-    int i;
-    for(i = 1, j = 0; i <= x; i++)
+    i = 1; int j = 0
+    while(i <= x)
     {
         if(isSymmetrical(i))
             arr[j++] = i;
+        i++;
     }
     return arr;
 }
@@ -82,11 +85,12 @@ int main() {
             compare_size = 0;
             size = getsize(i);
             int* arr = tobin(i);
-          int k;
-         for(k = 0, j = size - 1; k < size/2; k++, j--)
+          int k = 0; int j = size - 1;
+        while(k < size/2)
             {
                 if(arr[k] == arr[j])
                     compare_size++;
+            k++; j--;
             }
             if(compare_size == size/2){
                 printf(" %d  ", quantity);
