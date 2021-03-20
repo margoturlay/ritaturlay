@@ -3,7 +3,7 @@
 
 int factoriall (int n)
 {
-    return (n < 2) ? 1 : n * factorial (n - 1);
+    return (n < 2) ? 1 : n * factoriall (n - 1);
 }
 
 
@@ -15,7 +15,7 @@ int main() {
 
     for( n = 1; fabs(sin(x) - sum) >= eps; n++)
     {
-      sum+= pow(-1,n - 1)*powf(x,2*n-1)/factorial(2*n-1);
+      sum+= pow(-1,n - 1)*powf(x,2*n-1)/factoriall(2*n-1);
     }
 
     printf("SUM = %f",sum);
