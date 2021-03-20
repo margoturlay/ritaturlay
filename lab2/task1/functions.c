@@ -9,6 +9,3 @@ printf("5.Информация о версии и авторе \n");
 printf("6.Выход \n");
 printf("Enter your choice :  ");
 }
-void clrscr() {
-  system("@cls || clear");
-}

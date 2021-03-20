@@ -1,2 +1,1 @@
 void menu();
-void clrscr();

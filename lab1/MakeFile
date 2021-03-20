@@ -1,8 +1,20 @@
-task1.o: task1.c
-	gcc -c task1.c -std=c89
+useful: buildTest test valgrind_check linter_check
+buildMain: main.c
+	gcc -o main main.c 
 
-task1: task1.o
-	gcc -o task1 task1.o -std=c89
-	rm -rf *.o
+buildTest: tests.c
+	gcc -o tests -Dmain=_main main.c tests.c 
 
-all: task1
+test:
+	./tests
+	
+valgrind_check:
+	echo "20\n2.2032" > input.txt
+	valgrind ./tests < input.txt
+	
+linter_check:
+	cpp main.c
+
+.PHONY: clean
+clean:
+	rm -rf lab1/

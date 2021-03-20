@@ -1,16 +1,11 @@
 #include <stdio.h>
 #include <math.h>
-#include <assert.h>
 
 int factorial (int n)
 {
     return (n < 2) ? 1 : n * factorial (n - 1);
 }
 
-void TestFactorial() {
-  assert(factorial(3) == 6);
-  printf("FACTORIAL TESTS ARE OK\n");
-}
 
 int main() {
     int n;
@@ -26,6 +21,5 @@ int main() {
     printf("SUM = %f",sum);
     printf(" = sin(x) = %f\n", sin(x));
     printf("n = %d\n",n);
-    TestFactorial();
     return 0;
 }
