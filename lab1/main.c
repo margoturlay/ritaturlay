@@ -15,7 +15,7 @@ int getsize(int x)
 
 int compare(int* arr1, int* arr2, int n)
 {
-    int i = 0
+    int i = 0;
     while(i < n)
     {
         if(arr1[i] != arr2[i])
@@ -65,7 +65,7 @@ int* task1(int x)
         i++;
     }
     int* arr = (int*)malloc(size * sizeof(int));
-    i = 1; int j = 0
+    i = 1; int j = 0;
     while(i <= x)
     {
         if(isSymmetrical(i))
