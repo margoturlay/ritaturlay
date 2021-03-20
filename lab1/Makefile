@@ -9,7 +9,7 @@ test:
 	./tests
 	
 valgrind_check:
-	echo "20\n2.2032" > input.txt
+	echo "20" > input.txt
 	valgrind ./tests < input.txt
 	
 linter_check:
