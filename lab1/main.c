@@ -4,7 +4,8 @@
 #include "main.h"
 int getsize(int x)
 {
-    int size = 0;
+    int size;
+    size = 0;
     while (x)
     {
         x/=2;
@@ -15,7 +16,8 @@ int getsize(int x)
 
 int compare(int* arr1, int* arr2, int n)
 {
-    int i = 0;
+    int i;
+    i = 0;
     while(i < n)
     {
         if(arr1[i] != arr2[i])
@@ -27,7 +29,8 @@ int compare(int* arr1, int* arr2, int n)
 
 int* tobin(int x)
 {
-    int size = getsize(x);
+    int size;
+    size = getsize(x);
     int* arr = (int*)malloc(size*sizeof(int));
     size = 0;
     while (x)
@@ -40,14 +43,17 @@ int* tobin(int x)
 
 int isSymmetrical(int x)
 {
-    int size = getsize(x);
-    int* arr = tobin(x);
+    int size;
+    size = getsize(x);
+    int* arr;
+    arr = tobin(x);
     if(arr[0] != 1)
         return 0;
-    int i;
-    for(i = 0, j = size - 1; i < j; i++, j--)
+    int i = 0; int j = size - 1;
+    while(i < j)
     {
         if(arr[i++] != arr[j--])
+            i++; j--;
             return 0;
     }
     return 1;
@@ -57,20 +63,21 @@ int* task1(int x)
 {
 
     int size = 0;
-    int i = 1;
+    int i = 1, j = 0;
     while(i <= x)
     {
         if(isSymmetrical(i))
             size++;
         i++;
     }
-    int* arr = (int*)malloc(size * sizeof(int));
-    i = 1; int j = 0;
+    int* arr;
+    arr = (int*)malloc(size * sizeof(int));
+    int t = 1;
     while(i <= x)
     {
-        if(isSymmetrical(i))
-            arr[j++] = i;
-        i++;
+        if(isSymmetrical(t))
+            arr[j++] = t;
+        t++;
     }
     return arr;
 }
