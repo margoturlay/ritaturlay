@@ -9,7 +9,7 @@ test:
 	./tests
 	
 valgrind_check:
-	echo "0.1" > input.txt
+	echo "0.2" > input.txt
 	valgrind ./tests < input.txt
 	
 linter_check:
