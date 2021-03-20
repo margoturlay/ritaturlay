@@ -1,27 +1,28 @@
-name: C/C++ CI
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+all: clean main tests run_tests valgrind_check linter_check
 
-jobs:
+main:
+	mkdir -p bin/program
+	gcc -std=c89 -o bin/program/main main.c
 
-  build:
-  
-    runs-on: ubuntu-latest
+tests:
+	mkdir -p bin/tests
+	gcc -std=c89 -o bin/tests/tests -Dmain=_main main.c tests.c
 
-    steps:
-    
-      - uses: actions/checkout@v1
-      - name: install valgrind and cpplint
-      
-        run: |
-          sudo apt install valgrind
-          sudo pip install cpplint
-      - name: compiling and test
-        
-        run: |
-           ./main
+run:
+	./bin/program/main
+
+run_tests:
+	./bin/tests/tests
+
+valgrind_check:
+	mkdir -p bin/temp
+	echo 100000 > bin/temp/input.txt
+	valgrind ./bin/program/main < bin/temp/input.txt
+
+linter_check:
+	cpplint *.c
+
+clean: 
+	rm -rf bin/
   
