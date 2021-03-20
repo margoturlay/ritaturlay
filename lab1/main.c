@@ -1,4 +1,3 @@
-// Copyright 2021 Margarita Turlay
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
@@ -31,7 +30,8 @@ int* tobin(int x)
 {
     int size;
     size = getsize(x);
-    int* arr = (int*)malloc(size*sizeof(int));
+    int* arr;
+    arr = (int*)malloc(size*sizeof(int));
     size = 0;
     while (x)
     {
@@ -49,7 +49,8 @@ int isSymmetrical(int x)
     arr = tobin(x);
     if(arr[0] != 1)
         return 0;
-    int i = 0; int j = size - 1;
+    int i;
+    i = 0; int j; j = size - 1;
     while(i < j)
     {
         if(arr[i++] != arr[j--])
@@ -64,6 +65,7 @@ int* task1(int x)
 
     int size = 0;
     int i = 1, j = 0;
+    int t; t = 1;
     while(i <= x)
     {
         if(isSymmetrical(i))
@@ -72,7 +74,6 @@ int* task1(int x)
     }
     int* arr;
     arr = (int*)malloc(size * sizeof(int));
-    int t = 1;
     while(i <= x)
     {
         if(isSymmetrical(t))
@@ -91,7 +92,8 @@ int main() {
         if(i%2 == 1) {
             compare_size = 0;
             size = getsize(i);
-            int* arr = tobin(i);
+            int* arr;
+            arr = tobin(i);
           int k = 0; int j = size - 1;
         while(k < size/2)
             {
