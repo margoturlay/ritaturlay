@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int factorial (int n)
+int factoriall (int n)
 {
     return (n < 2) ? 1 : n * factorial (n - 1);
 }

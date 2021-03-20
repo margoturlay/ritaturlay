@@ -1,11 +1,20 @@
-lab2task1.o: lab2task1.c
-	gcc -c lab2task1.c -std=c89
+useful: buildTest test valgrind_check linter_check
+buildMain: main.c
+	gcc -o main main.c -std=c89 -lm
 
-functions.o: functions.c
-	gcc -c functions.c -std=c89
+buildTest: tests.c
+	gcc -o tests -Dmain=_main main.c tests.c -std=c89 -pedantic -lm
 
-lab2task1: lab2task1.o functions.o
-	gcc -o lab2task1 lab2task1.o functions.o -std=c89
-	rm -rf *.o
+test:
+	./tests
+	
+valgrind_check:
+	echo "1" > input.txt
+	valgrind ./tests < input.txt
+	
+linter_check:
+	cpp main.c
 
-all: lab2task1 
+.PHONY: clean
+clean:
+	rm -rf lab2/task1/
