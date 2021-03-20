@@ -23,5 +23,5 @@ jobs:
       - name: compiling and test
         
         run: |
-           make -C lab1/
+           ./main
   
