@@ -15,7 +15,8 @@ int getsize(int x)
 
 int compare(int* arr1, int* arr2, int n)
 {
-    for(int i = 0; i < n; i++)
+    int i;
+    for(i = 0; i < n; i++)
     {
         if(arr1[i] != arr2[i])
             return 0;
@@ -42,7 +43,8 @@ int isSymmetrical(int x)
     int* arr = tobin(x);
     if(arr[0] != 1)
         return 0;
-    for(int i = 0, j = size - 1; i < j; i++, j--)
+    int i;
+    for(i = 0, j = size - 1; i < j; i++, j--)
     {
         if(arr[i++] != arr[j--])
             return 0;
@@ -54,13 +56,15 @@ int* task1(int x)
 {
 
     int size = 0;
-    for(int i = 1; i <= x; i++)
+    int i;
+    for(i = 1; i <= x; i++)
     {
         if(isSymmetrical(i))
             size++;
     }
     int* arr = (int*)malloc(size * sizeof(int));
-    for(int i = 1, j = 0; i <= x; i++)
+    int i;
+    for(i = 1, j = 0; i <= x; i++)
     {
         if(isSymmetrical(i))
             arr[j++] = i;
@@ -78,8 +82,8 @@ int main() {
             compare_size = 0;
             size = getsize(i);
             int* arr = tobin(i);
-
-         for(int k = 0, j = size - 1; k < size/2; k++, j--)
+          int k;
+         for(k = 0, j = size - 1; k < size/2; k++, j--)
             {
                 if(arr[k] == arr[j])
                     compare_size++;
