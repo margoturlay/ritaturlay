@@ -20,32 +20,13 @@ int sokrat(int a, int b) {
         if (a < b)                               
             less = a;                               
           else                                                   
-            less = b;    
-            do{                            
+            less = b;                               
           for (j = less; j > 0; j--)  {                     
             if (!((int)a% j) && !((int)b % j)) {     
                a/= j;                         
                b /= j; }                        
 }
-          }
-          while(j!=1);
            return a;  
-}
-int sokrat2(int a, int b) {
-      int j, less;                                 
-          if (a < b)                               
-            less = a;                               
-          else                                                   
-            less = b;   
-            do{                            
-          for (j = less; j > 0; j--)  {                     
-            if (!((int)a% j) && !((int)b % j)) {     
-               a/= j;                         
-               b /= j;                         
-}
-          } }
-          while(j!=1);
-           return b;  
 }
  float desyat(int a, int b) {
           float t = (float)a / (float)b;
@@ -78,8 +59,20 @@ switch (choice) {
         break;
     }
     case 4: {
-     numerator = sokrat(numerator, denominator);  
-     denominator = sokrat2(numerator, denominator);                                                      
+int j, less;                               
+do{
+    if(numerator < denominator)                                 
+        less = numerator;                            
+    else                                                  
+        less = denominator;                                
+    for(j = less; j > 0; j--){                    
+        if(!(numerator % j) && !(denominator % j)){     
+            numerator/= j;                   
+            denominator /= j;                          
+            break;                              
+        }
+    }
+}while(j != 1);                                   
           printf("\nСокращенное число:%d/%d\n\n", numerator, denominator);
           break;
     }

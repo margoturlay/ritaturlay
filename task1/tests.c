@@ -4,7 +4,7 @@
 
 void test()
 {
-    assert(desyat(3, 4) == 0.8);
+    assert(sokrat(3, 9) == 1);
     printf("All tests are passed.\n");
 }
 #undef main
