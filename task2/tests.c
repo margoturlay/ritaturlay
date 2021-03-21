@@ -1,11 +1,13 @@
 #include <assert.h>
 #include <stdio.h>
 #include <math.h>
-#include "functions.h"
+#include "main.h"
 void TestFactorial() {
-  assert(factoriall(3) == 6);
+  assert(factorial(3) == 6);
   
 }
+
+#undef main
 
 int main() {
     TestFactorial();

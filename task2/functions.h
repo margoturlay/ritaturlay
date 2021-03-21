@@ -1,1 +1,0 @@
-int factoriall (int n);
