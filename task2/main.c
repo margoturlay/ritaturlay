@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <math.h>
+#include "functions.h"
 
 int factoriall (int n)
 {
-    return (n < 2) ? 1 : n * factoriall (n - 1);
+   return (n < 2) ? 1 : n * factoriall (n - 1);
 }
 
 

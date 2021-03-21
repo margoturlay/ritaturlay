@@ -1,6 +1,7 @@
 #include <assert.h>
 #include <stdio.h>
 #include <math.h>
+#include "functions.h"
 void TestFactorial() {
   assert(factoriall(3) == 6);
   
