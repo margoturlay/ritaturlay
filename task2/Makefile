@@ -17,4 +17,4 @@ linter_check:
 
 .PHONY: clean
 clean:
-	rm -rf lab2/task2/
+	rm -rf task2/
