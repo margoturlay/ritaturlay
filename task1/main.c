@@ -35,11 +35,15 @@ int sokrat(int a, int b) {
 
 
 int main() {
-int numerator, denominator;
+int numerator, denominator, var;
 int choice;
 do {
 print_menu();
-scanf("%d", &choice);
+var = scanf("%d", &choice);
+if (var != 1) {
+printf("INCORRECT INPUT");
+break;}
+
 switch (choice) {
     case 1: {
         printf("Числитель = ");
@@ -59,23 +63,23 @@ switch (choice) {
         break;
     }
     case 4: {
-int j, less;                               
-do{
-    if(numerator < denominator)                                 
-        less = numerator;                            
-    else                                                  
-        less = denominator;                                
-    for(j = less; j > 0; j--){                    
-        if(!(numerator % j) && !(denominator % j)){     
-            numerator/= j;                   
-            denominator /= j;                          
-            break;                              
-        }
-    }
-}while(j != 1);                                   
-          printf("\nСокращенное число:%d/%d\n\n", numerator, denominator);
-          break;
-    }
+        int j, less;                               
+        do{
+            if(numerator < denominator)                                 
+                less = numerator;                            
+            else                                                  
+                less = denominator;                                
+            for(j = less; j > 0; j--){                    
+                if(!(numerator % j) && !(denominator % j)){     
+                    numerator/= j;                   
+                    denominator /= j;                          
+                    break;                              
+                }
+            }
+        } while(j != 1);                                   
+                printf("\nСокращенное число:%d/%d\n\n", numerator, denominator);
+                break;
+            }
     case 5: {
        get_version();
         break;
