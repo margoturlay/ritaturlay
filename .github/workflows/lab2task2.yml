@@ -1,4 +1,4 @@
-name: C/C++ CI
+name: lab2task2
 
 on:
   push:
