@@ -10,11 +10,13 @@ long int factorial(long int n)
 
 
 int main() {
-    int n;
+    int n, var;
     float eps = 0.0000001, x, sum = 0;
     printf("x = ");
-    scanf("%f",&x);
-
+    var = scanf("%f", &x);
+    if (var != 1) 
+     printf("INCORRECT INPUT! TRY AGAIN");  
+    else {
     for( n = 1; fabs(sin(x) - sum) >= eps; n++)
     {
       sum+= pow(-1,n - 1)*powf(x,2*n-1)/factorial(2*n-1);
@@ -23,5 +25,6 @@ int main() {
     printf("SUM = %f",sum);
     printf(" = sin(x) = %f\n", sin(x));
     printf("n = %d\n",n);
+    }
     return 0;
 }

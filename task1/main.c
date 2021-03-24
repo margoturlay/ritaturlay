@@ -84,10 +84,6 @@ do{
         printf("Goodbye\n");
         break;
     }
-    default: {
-        printf("Wrong Choice. Enter again\n");
-        continue;
-    }
 }
 }
 while (choice != 6);

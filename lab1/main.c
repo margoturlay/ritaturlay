@@ -84,9 +84,12 @@ int* task1(int x)
 }
 
 int main() {
-    int m, size, compare_size, quantity = 1;
+    int m, size, compare_size, quantity = 1, var;
     printf("input m: ");
-    scanf("%d", &m);
+    var = scanf("%d", &m);
+    if (var != 1) 
+     printf("INCORRECT INPUT! TRY AGAIN");  
+    else{
     while(quantity <= m) {
         int i = quantity;
         if(i%2 == 1) {
@@ -111,7 +114,9 @@ int main() {
             }
         }
         quantity++;
+    } 
     }
+    
 
     return 0;
 }
