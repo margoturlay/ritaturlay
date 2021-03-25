@@ -64,7 +64,7 @@ switch (choice) {
     }
     case 4: {
         int j, less;                               
-        do{
+        do {
             if(numerator < denominator)                                 
                 less = numerator;                            
             else                                                  
