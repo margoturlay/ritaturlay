@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: lab2task1
+name: lab3
 
 on:
   push:
