@@ -1,0 +1,16 @@
+#include <assert.h>
+#include <stdio.h>
+#include "main.h"
+
+void test()
+{
+    assert(lower("FGH H") == "fghh");
+
+    printf("All tests are passed.\n");
+}
+#undef main
+
+int main() {
+    test();
+    return 0;
+}
