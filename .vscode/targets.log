@@ -10,8 +10,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `all'.  Stop.
  
 
-# Make data base, printed on Sat Mar 20 11:03:09 2021
- 
+# Make data base, printed on Wed Apr  7 22:40:27 2021
 
 # Variables
 
@@ -28,23 +27,25 @@ VSCODE_LOG_NATIVE = false
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /Users/margo/ritaturlay
+CURDIR := /Users/margo/Documents/ritaturlay
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{"*":"ru"},"_languagePackId":"1cbc3d1d810c483438acfa23452fdb2b.ru","_translationsConfigFile":"/Users/margo/Library/Application Support/Code/clp/1cbc3d1d810c483438acfa23452fdb2b.ru/tcf.json","_cacheRoot":"/Users/margo/Library/Application Support/Code/clp/1cbc3d1d810c483438acfa23452fdb2b.ru","_resolvedLanguagePackCoreLocation":"/Users/margo/Library/Application Support/Code/clp/1cbc3d1d810c483438acfa23452fdb2b.ru/2b9aebd5354a3629c3aba0a5f5df49f43d6689f8","_corruptedFile":"/Users/margo/Library/Application Support/Code/clp/1cbc3d1d810c483438acfa23452fdb2b.ru/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{"*":"ru"},"_languagePackId":"1cbc3d1d810c483438acfa23452fdb2b.ru","_translationsConfigFile":"/Users/margo/Library/Application Support/Code/clp/1cbc3d1d810c483438acfa23452fdb2b.ru/tcf.json","_cacheRoot":"/Users/margo/Library/Application Support/Code/clp/1cbc3d1d810c483438acfa23452fdb2b.ru","_resolvedLanguagePackCoreLocation":"/Users/margo/Library/Application Support/Code/clp/1cbc3d1d810c483438acfa23452fdb2b.ru/c185983a683d14c396952dd432459097bc7f757f","_corruptedFile":"/Users/margo/Library/Application Support/Code/clp/1cbc3d1d810c483438acfa23452fdb2b.ru/corrupted.info","_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
 # makefile
 MAKEFILE_LIST := 
 # environment
-VSCODE_NODE_CACHED_DATA_DIR = /Users/margo/Library/Application Support/Code/CachedData/2b9aebd5354a3629c3aba0a5f5df49f43d6689f8
+VSCODE_NODE_CACHED_DATA_DIR = /Users/margo/Library/Application Support/Code/CachedData/c185983a683d14c396952dd432459097bc7f757f
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/rp/h_bgcy2962z_r6g9fgv19wvm0000gn/T/vscode-ipc-18fd57c8-af27-47d9-b035-d3599bf4d555.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/rp/h_bgcy2962z_r6g9fgv19wvm0000gn/T/vscode-ipc-c2a34aa2-e8b6-436f-9560-c4833b0dccd2.sock
+# environment
+VSCODE_CWD = /
 # environment
 PATH = /Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
 # environment
@@ -54,13 +55,13 @@ ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.rw9k3MyjEJ/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.jJ6Jcsbq9R/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-PWD = /Users/margo/ritaturlay
+PWD = /Users/margo/Documents/ritaturlay
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
@@ -102,7 +103,7 @@ TMPDIR = /var/folders/rp/h_bgcy2962z_r6g9fgv19wvm0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/margo/Library/Application Support/Code/1.54.3-main.sock
+VSCODE_IPC_HOOK = /Users/margo/Library/Application Support/Code/1.55.0-main.sock
 # makefile
 MAKEFLAGS = Rrqp
 # environment
@@ -110,7 +111,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.7654694.7654700
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.8593911.8593917
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
@@ -132,9 +133,9 @@ SUFFIXES :=
 # environment
 MAKELEVEL := 0
 # environment
-VSCODE_PID = 1544
+VSCODE_PID = 1203
 # variable set hash-table stats:
-# Load=59/1024=6%, Rehash=0, Collisions=1/80=1%
+# Load=60/1024=6%, Rehash=0, Collisions=1/81=1%
 
 # Pattern-specific Variable Values
 
@@ -142,9 +143,9 @@ VSCODE_PID = 1544
 
 # Directories
 
-# . (device 16777224, inode 7676629): 9 files, no impossibilities.
+# . (device 16777223, inode 8324576): 12 files, no impossibilities.
 
-# 9 files, no impossibilities in 1 directories.
+# 12 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -216,6 +217,6 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Sat Mar 20 11:03:09 2021
+# Finished Make data base on Wed Apr  7 22:40:27 2021
 
  
