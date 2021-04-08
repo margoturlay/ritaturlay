@@ -18,13 +18,22 @@ char* lower(char* str)
   return str;
 }
 
-int compare() {
-  char* str ="fghh";
-  char* str2 = lower(str2);
-  if (!strcmp(str, str2)) 
-    return 1;
-  return 0;
+int strCmp(char string1[], char string2[] )
+{
+    for (int i = 0; ; i++)
+    {
+        if (string1[i] != string2[i])
+        {
+            return string1[i] < string2[i] ? -1 : 1;
+        }
+
+        if (string1[i] == '\0')
+        {
+            return 0;
+        }
+    }
 }
+
 
 char *strcpynew(char *d, char *s){
    char *saved = d;

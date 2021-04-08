@@ -5,6 +5,7 @@
 
 void test()
 {
+    assert(strCmp("fghh","fghh") == 0);
     printf("All tests are passed.\n");
 }
 #undef main
