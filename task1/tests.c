@@ -4,7 +4,7 @@
 
 void test()
 {
-    assert(lower("FGH H") == "fghh");
+    assert(lower("FGHH") == "fghh");
 
     printf("All tests are passed.\n");
 }
