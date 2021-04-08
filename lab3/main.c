@@ -39,7 +39,8 @@ int main() {
         return 0;
       }
 
-    int** arr = (int**)calloc(str, sizeof(*arr));
+    int** arr;
+    arr = (int**)calloc(str, sizeof(*arr));
     for (z = 0; z < str; z++)
     arr[z] = (int*)calloc(col, sizeof(*arr[z]));
     if(!arr){
