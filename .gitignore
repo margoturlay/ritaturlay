@@ -1,3 +1,4 @@
 .vscode/extensions.json
 *.exe
 */.vs
+*/.vscode
