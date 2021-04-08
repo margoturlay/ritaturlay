@@ -20,7 +20,8 @@ char* lower(char* str)
 
 int strCmp(char string1[], char string2[] )
 {
-    for (int i = 0; ; i++)
+    int i;
+    for (i = 0; ; i++)
     {
         if (string1[i] != string2[i])
         {
