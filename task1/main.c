@@ -18,23 +18,6 @@ char* lower(char* str)
   return str;
 }
 
-int strCmp(char string1[], char string2[] )
-{
-    int i;
-    for (i = 0; ; i++)
-    {
-        if (string1[i] != string2[i])
-        {
-            return string1[i] < string2[i] ? -1 : 1;
-        }
-
-        if (string1[i] == '\0')
-        {
-            return 0;
-        }
-    }
-}
-
 int Stringlen(char* name) {
     int size = 0, i;
     for(i = 0; name[i] != '\0'; i++ )
@@ -42,8 +25,7 @@ int Stringlen(char* name) {
     return size;
 }
 
-
-char *strcpynew(char *d, char *s){
+char *mystrcpy(char *d, char *s){
    char *saved = d;
    while ((*d++ = *s++) != '\0');
        return saved;
@@ -61,8 +43,8 @@ b = lower(str2);
 for(pb=str+Stringlen(a); pb!=str; --pb){
   *pb='\0';
     for(pa=a; *pa; ++pa){
-        if(strstr(str2, pa)&&(Stringlen(pa)>strlen(res))){
-            strcpynew(res, pa);
+        if(strstr(str2, pa)&&(Stringlen(pa)>Stringlen(res))){
+            mystrcpy(res, pa);
         }
     }
 }
