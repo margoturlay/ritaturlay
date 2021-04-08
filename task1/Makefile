@@ -9,7 +9,7 @@ test:
 	./tests
 	
 valgrind_check:
-	echo "gfb g" > input.txt
+	echo "fgh h" > input.txt
 	valgrind ./tests < input.txt
 	
 linter_check:

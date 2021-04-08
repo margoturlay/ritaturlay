@@ -18,6 +18,15 @@ char* lower(char* str)
   return str;
 }
 
+int compare( char str2[5]) {
+  lower(str2);
+  if (strcmp(str2, "fghh")) {
+    printf("Invalid password.\n");
+  return 1;
+  }
+  return 0;
+}
+
 
 int main() {
 char str[80], str2[80];
