@@ -9,7 +9,7 @@ test:
 	./tests
 	
 valgrind_check:
-	echo "fgh h" > input.txt
+	echo "1" > input.txt
 	valgrind ./tests < input.txt
 	
 linter_check:
@@ -17,4 +17,4 @@ linter_check:
 
 .PHONY: clean
 clean:
-	rm -rf task2/
+	rm -rf task1/
