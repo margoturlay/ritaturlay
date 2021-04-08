@@ -91,8 +91,9 @@ switch (choice) {
     case 1: {
         break;}
         case 2: {
-        for (int k = 0; k < str; k++) {
-            for (int u = 0; u < col; u++) {
+            int k, u;
+        for (k = 0; k < str; k++) {
+            for (u = 0; u < col; u++) {
                 if (arr[k][u] == 0)
                 printf(" * ");
                 else
