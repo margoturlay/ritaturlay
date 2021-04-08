@@ -18,12 +18,13 @@ printf("Ваш выбор: ");
 
 char** print_matrix(int **arr, int str, int col)
 {
+    int z, k, u;
     char** res = (char**)malloc(str * sizeof(char*));
-    for (int z = 0; z < str; z++)
+    for (z = 0; z < str; z++)
     res[z] = (char*)malloc(col* sizeof(char));
     
-            for (int k = 0; k < str; k++) {
-            for (int u = 0; u < col; u++) {
+            for (k = 0; k < str; k++) {
+            for (u = 0; u < col; u++) {
                 if (arr[k][u] == 0)
                     res[k][u] = '*';
                 else
@@ -37,10 +38,11 @@ char** print_matrix(int **arr, int str, int col)
 
 int compare(char** arr1, int str1, int col1, char** arr2, int str2, int col2)
 {
+    int i, j;
     if(str1 != str2 || col1 != col2)
         return 1;
-    for(int i = 0; i < str1; i++)
-        for (int j = 0; j < col1; j++)
+    for(i = 0; i < str1; i++)
+        for (j = 0; j < col1; j++)
             if(arr1[i][j] != arr2[i][j])
                 return 1;
     return 0;

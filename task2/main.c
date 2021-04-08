@@ -9,10 +9,21 @@ int main()
     printf("Unable to open file");
     return 1;
   }
-  char c, str[80];
-  int word_len = 0;
-   while ((c = fgetc(input)) != EOF) {
-    if (c == '\t' || c == '\n' || c == ' ') {
-      str[word_len] = '\0';
+    int c;
+
+    while ((c = getchar()) != EOF)
+    {
+
+        if(c == ' ' || c == '\t' || c == '\n')
+        {
+            putchar('\n');
+            
+            while ((c = getchar()) == ' ' || (c = getchar()) == '\t' || (c = getchar()) == '\n')
+            {
+                putchar('\r');  
+            }
+        }
+        putchar('-');
+     }
   return 0;
   }
