@@ -7,7 +7,7 @@ char* lower(char* str)
 {
   int i = 0;
   char ch;
-   puts("\nВведите строку символов: ");
+  puts("\nВведите строку символов: ");
   while ((ch = getchar()) != '\n') { 
     if (ch == ' ') continue;
         if(ch >= 'A' && ch <= 'Z') 
@@ -18,12 +18,19 @@ char* lower(char* str)
   return str;
 }
 
-int compare(char* str, char* str2) {
-  if (strcmp(str, str2)) {
-    printf("Invalid password.\n");
-  return 1;
-  }
+int compare() {
+  char* str ="fghh";
+  char* str2 = lower(str2);
+  if (!strcmp(str, str2)) 
+    return 1;
   return 0;
+}
+
+char *strcpynew(char *d, char *s){
+   char *saved = d;
+   while ((*d++ = *s++) != '\0');
+
+   return saved;
 }
 
 int main() {
@@ -38,7 +45,7 @@ for(pb=str+strlen(a); pb!=str; --pb){
 *pb='\0';
     for(pa=a; *pa; ++pa){
         if(strstr(str2, pa)&&(strlen(pa)>strlen(res))){
-        strcpy(res, pa);
+            strcpynew(res, pa);
         }
     }
 }

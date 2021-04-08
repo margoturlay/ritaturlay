@@ -1,29 +1,27 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+ 
 int main()
 {
- FILE *input;
-  input = fopen("text.txt", "r");
-  if (input == NULL) {
-    printf("Unable to open file");
-    return 1;
-  }
-    int c;
-
-    while ((c = getchar()) != EOF)
+    int word_length = 0;
+    char c;
+    int i;
+ 
+    while((c = getchar()) != '\n')                 
     {
-
-        if(c == ' ' || c == '\t' || c == '\n')
+        if (c != ' ')                              
+            word_length++;         
+        else                                      
         {
-            putchar('\n');
-            
-            while ((c = getchar()) == ' ' || (c = getchar()) == '\t' || (c = getchar()) == '\n')
-            {
-                putchar('\r');  
-            }
+            for(i = 0; i < word_length; i++)   
+                printf("_"); 
+            printf("\n");        
+            word_length = 0; 
         }
-        putchar('-');
-     }
-  return 0;
-  }
+    }
+ 
+    for(i = 0; i < word_length; i++) 
+        printf("_");            
+                    
+ 
+    return 0;
+}
