@@ -16,7 +16,7 @@ printf("2 - оставить старое значение \n");
 printf("Ваш выбор: ");
 }
 
-int compare(char** arr1, int str1, int col1, char** arr2, int str2, int col2)
+int mycompare(int** arr1, int str1, int col1, int** arr2, int str2, int col2)
 {
     int i, j;
     if(str1 != str2 || col1 != col2)
@@ -37,14 +37,19 @@ int main() {
       if ( (var1 || var2) != 1 ) {
         printf("INCORRECT INPUT");
         return 0;
-    }
+      }
 
     int** arr = (int**)calloc(str, sizeof(*arr));
     for (z = 0; z < str; z++)
-    arr[z] = (int*)calloc(col, sizeof(*arr[i]));
+    arr[z] = (int*)calloc(col, sizeof(*arr[z]));
+    if(!arr){
+        printf("Incorrect value\n");
+        system("pause");
+        return 0;
+    }
 
 
-do {
+    do {
             while (i != 0 || j != 0 || x != 0) {
             printf("Индекс строки i = ");
             scanf("%d", &i);
@@ -61,76 +66,76 @@ do {
             printf("Значение элемента x = ");
             scanf("%d", &x);
             arr[i][j] = x;
-        }
-        print_menu();
-var = scanf("%d", &choice);
-if (var != 1) {
-printf("INCORRECT INPUT");
-break;}
-switch (choice) {
-    case 1: {
-        break;}
-        case 2: {
-            int k, u;
-            for (k = 0; k < str; k++) {
-                for (u = 0; u < col; u++) {
-                    if (arr[k][u] == 0)
-                        printf(" * ");
-                    else
-                        printf(" %d ", arr[k][u]);
-                }
-            printf("\n");
             }
-        break; }
-        case 3: {
-            i = 1; j = 1; x = 1;
-            while (i != 0 || j != 0 || x != 0) {
-                printf("Индекс строки i = ");
-                scanf("%d", &i);
-             while ((i > str-1) || i < 0) {
-                printf("INCORRECT INPUT\nИндекс строки i = ");
-                scanf("%d", &i);
-            }
-            printf("Индекс столбца j = ");
-            scanf("%d", &j);
-
-            while ((j > col-1) || j < 0) {
-               printf("INCORRECT INPUT\nИндекс столбца j = ");
-               scanf("%d", &j);
-            }
-            if (arr[i][j] != 0) {
-                print_menu2();
-                var5 = scanf("%d", &choice2);
-                    if (var5 != 1) {
-                        printf("INCORRECT INPUT");
-                    break;}
-                switch (choice2) {
-                    case 1:
-                    {
-                     printf("Значение элемента x = ");
-                     scanf("%d", &x);
-                     arr[i][j] = x;
-                     break;
+    print_menu();
+    var = scanf("%d", &choice);
+    if (var != 1) {
+    printf("INCORRECT INPUT");
+    break;}
+    switch (choice) {
+        case 1: {
+            break;}
+            case 2: {
+                int k, u;
+                for (k = 0; k < str; k++) {
+                    for (u = 0; u < col; u++) {
+                        if (arr[k][u] == 0)
+                            printf(" * ");
+                        else
+                            printf(" %d ", arr[k][u]);
                     }
-                    case 2:
-                    break;
+                printf("\n");
                 }
-            } else {
-            printf("Значение элемента x = ");
-            scanf("%d", &x);
-            arr[i][j] = x;
-            }
-        }
-        break;}
+            break; }
+            case 3: {
+                i = 1; j = 1; x = 1;
+                while (i != 0 || j != 0 || x != 0) {
+                    printf("Индекс строки i = ");
+                    scanf("%d", &i);
+                while ((i > str-1) || i < 0) {
+                    printf("INCORRECT INPUT\nИндекс строки i = ");
+                    scanf("%d", &i);
+                }
+                printf("Индекс столбца j = ");
+                scanf("%d", &j);
 
-    case 0: {
-        printf("Goodbye\n");
-        break;
+                while ((j > col-1) || j < 0) {
+                printf("INCORRECT INPUT\nИндекс столбца j = ");
+                scanf("%d", &j);
+                }
+                if (arr[i][j] != 0) {
+                    print_menu2();
+                    var5 = scanf("%d", &choice2);
+                        if (var5 != 1) {
+                            printf("INCORRECT INPUT");
+                        break;}
+                    switch (choice2) {
+                        case 1:
+                        {
+                        printf("Значение элемента x = ");
+                        scanf("%d", &x);
+                        arr[i][j] = x;
+                        break;
+                        }
+                        case 2:
+                        break;
+                    }
+                } else {
+                printf("Значение элемента x = ");
+                scanf("%d", &x);
+                arr[i][j] = x;
+                }
+            }
+            break;}
+
+        case 0: {
+            printf("Goodbye\n");
+            break;
+        }
     }
-}
-}
-while (choice != 0);
-for( i = 0; i < str; i++)
-    free(arr);
-return 0;
-}
+    }
+    while (choice != 0);
+    for( i = 0; i < str; i++)
+        free(arr);
+    return 0;
+    }
