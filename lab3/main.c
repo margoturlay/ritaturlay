@@ -16,26 +16,6 @@ printf("2 - оставить старое значение \n");
 printf("Ваш выбор: ");
 }
 
-char** print_matrix(int **arr, int str, int col)
-{
-    int z, k, u;
-    char** res = (char**)malloc(str * sizeof(char*));
-    for (z = 0; z < str; z++)
-    res[z] = (char*)malloc(col* sizeof(char));
-    
-            for (k = 0; k < str; k++) {
-            for (u = 0; u < col; u++) {
-                if (arr[k][u] == 0)
-                    res[k][u] = '*';
-                else
-                    res[k][u] = arr[k][u]+48;
-                
-            }
-            
-        }
-        return res;
-}
-
 int compare(char** arr1, int str1, int col1, char** arr2, int str2, int col2)
 {
     int i, j;
