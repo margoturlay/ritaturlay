@@ -10,23 +10,21 @@ char* lower(char* str)
    puts("\nВведите строку символов: ");
   while ((ch = getchar()) != '\n') { 
     if (ch == ' ') continue;
-    if(ch >= 'A' && ch <= 'Z') 
-        ch = ch + 32;
-        str[i++] = ch;
+        if(ch >= 'A' && ch <= 'Z') 
+            ch = ch + 32;
+  str[i++] = ch;
   }
   str[i] = '\0'; 
   return str;
 }
 
-int compare( char str2[5]) {
-  lower(str2);
-  if (strcmp(str2, "fghh")) {
+int compare(char* str, char* str2) {
+  if (strcmp(str, str2)) {
     printf("Invalid password.\n");
   return 1;
   }
   return 0;
 }
-
 
 int main() {
 char str[80], str2[80];
@@ -38,13 +36,12 @@ b = lower(str2);
 
 for(pb=str+strlen(a); pb!=str; --pb){
 *pb='\0';
-for(pa=a; *pa; ++pa){
-if(strstr(str2, pa)&&(strlen(pa)>strlen(res))){
-strcpy(res, pa);
-}
-}
+    for(pa=a; *pa; ++pa){
+        if(strstr(str2, pa)&&(strlen(pa)>strlen(res))){
+        strcpy(res, pa);
+        }
+    }
 }
 puts(*res?res:"not found");
-
-   return 0;
+return 0;
 }
