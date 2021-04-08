@@ -29,7 +29,9 @@ int mycompare(int** arr1, int str1, int col1, int** arr2, int str2, int col2)
 }
 
 int main() {
-    int str, col, i, j, var, var1, var2, var3, var4, var5, x, z, choice, choice2;
+    int str, col, i, j, x, z, choice, choice2;
+    int var, var1, var2, var3, var4, var5;
+    int** arr;
     printf("STRINGS = ");
     var1 = scanf("%d", &str);
     printf("COLUMNS = ");
@@ -38,8 +40,6 @@ int main() {
         printf("INCORRECT INPUT");
         return 0;
       }
-
-    int** arr;
     arr = (int**)calloc(str, sizeof(*arr));
     for (z = 0; z < str; z++)
     arr[z] = (int*)calloc(col, sizeof(*arr[z]));
