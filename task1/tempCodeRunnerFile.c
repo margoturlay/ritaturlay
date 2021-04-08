@@ -1,2 +1,1 @@
-
-    if (ch == ' ') continue;
+int Stringlen(char* name) {

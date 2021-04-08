@@ -72,24 +72,24 @@ switch (choice) {
         break;}
         case 2: {
             int k, u;
-        for (k = 0; k < str; k++) {
-            for (u = 0; u < col; u++) {
-                if (arr[k][u] == 0)
-                printf(" * ");
-                else
-                printf(" %d ", arr[k][u]);
-            }
+            for (k = 0; k < str; k++) {
+                for (u = 0; u < col; u++) {
+                    if (arr[k][u] == 0)
+                        printf(" * ");
+                    else
+                        printf(" %d ", arr[k][u]);
+                }
             printf("\n");
-        }
+            }
         break; }
         case 3: {
             i = 1; j = 1; x = 1;
             while (i != 0 || j != 0 || x != 0) {
-            printf("Индекс строки i = ");
-            scanf("%d", &i);
+                printf("Индекс строки i = ");
+                scanf("%d", &i);
              while ((i > str-1) || i < 0) {
-               printf("INCORRECT INPUT\nИндекс строки i = ");
-               scanf("%d", &i);
+                printf("INCORRECT INPUT\nИндекс строки i = ");
+                scanf("%d", &i);
             }
             printf("Индекс столбца j = ");
             scanf("%d", &j);
@@ -102,7 +102,7 @@ switch (choice) {
                 print_menu2();
                 var5 = scanf("%d", &choice2);
                     if (var5 != 1) {
-                    printf("INCORRECT INPUT");
+                        printf("INCORRECT INPUT");
                     break;}
                 switch (choice2) {
                     case 1:

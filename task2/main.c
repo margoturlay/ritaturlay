@@ -13,14 +13,14 @@ int main()
         else                                      
         {
             for(i = 0; i < word_length; i++)   
-                printf("_"); 
+                printf("*"); 
             printf("\n");        
             word_length = 0; 
         }
     }
  
     for(i = 0; i < word_length; i++) 
-        printf("_");            
+        printf("*");            
                     
  
     return 0;

@@ -35,26 +35,33 @@ int strCmp(char string1[], char string2[] )
     }
 }
 
+int Stringlen(char* name) {
+    int size = 0, i;
+    for(i = 0; name[i] != '\0'; i++ )
+        size++;
+    return size;
+}
+
 
 char *strcpynew(char *d, char *s){
    char *saved = d;
    while ((*d++ = *s++) != '\0');
-
-   return saved;
+       return saved;
 }
 
 int main() {
 char str[80], str2[80];
 char* a, res[100] = "", *pa=NULL, *pb=NULL;
 char* b;
+
 a = lower(str);
 b = lower(str2);
 
 
-for(pb=str+strlen(a); pb!=str; --pb){
-*pb='\0';
+for(pb=str+Stringlen(a); pb!=str; --pb){
+  *pb='\0';
     for(pa=a; *pa; ++pa){
-        if(strstr(str2, pa)&&(strlen(pa)>strlen(res))){
+        if(strstr(str2, pa)&&(Stringlen(pa)>strlen(res))){
             strcpynew(res, pa);
         }
     }
