@@ -6,11 +6,10 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+
+# Make data base, printed on Thu Apr 15 14:06:02 2021
  
 make: *** No rule to make target `all'.  Stop.
- 
-
-# Make data base, printed on Wed Apr 28 19:36:27 2021
  
 
 # Variables
@@ -28,23 +27,23 @@ VSCODE_LOG_NATIVE = false
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /Users/margo/Documents/ritaturlay
+CURDIR := /Users/margo/Documents/ritaturlay/task2
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{"*":"ru"},"_languagePackId":"62504e0eeb1b06aace9e4a105714e1b6.ru","_translationsConfigFile":"/Users/margo/Library/Application Support/Code/clp/62504e0eeb1b06aace9e4a105714e1b6.ru/tcf.json","_cacheRoot":"/Users/margo/Library/Application Support/Code/clp/62504e0eeb1b06aace9e4a105714e1b6.ru","_resolvedLanguagePackCoreLocation":"/Users/margo/Library/Application Support/Code/clp/62504e0eeb1b06aace9e4a105714e1b6.ru/3c4e3df9e89829dce27b7b5c24508306b151f30d","_corruptedFile":"/Users/margo/Library/Application Support/Code/clp/62504e0eeb1b06aace9e4a105714e1b6.ru/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{"*":"ru"},"_languagePackId":"62504e0eeb1b06aace9e4a105714e1b6.ru","_translationsConfigFile":"/Users/margo/Library/Application Support/Code/clp/62504e0eeb1b06aace9e4a105714e1b6.ru/tcf.json","_cacheRoot":"/Users/margo/Library/Application Support/Code/clp/62504e0eeb1b06aace9e4a105714e1b6.ru","_resolvedLanguagePackCoreLocation":"/Users/margo/Library/Application Support/Code/clp/62504e0eeb1b06aace9e4a105714e1b6.ru/08a217c4d27a02a5bcde898fd7981bda5b49391b","_corruptedFile":"/Users/margo/Library/Application Support/Code/clp/62504e0eeb1b06aace9e4a105714e1b6.ru/corrupted.info","_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
-# makefile
-MAKEFILE_LIST := 
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
 # environment
-VSCODE_NODE_CACHED_DATA_DIR = /Users/margo/Library/Application Support/Code/CachedData/3c4e3df9e89829dce27b7b5c24508306b151f30d
+VSCODE_NODE_CACHED_DATA_DIR = /Users/margo/Library/Application Support/Code/CachedData/08a217c4d27a02a5bcde898fd7981bda5b49391b
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/rp/h_bgcy2962z_r6g9fgv19wvm0000gn/T/vscode-ipc-ba96934b-5037-4fc9-9ad3-d06143f3524a.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/rp/h_bgcy2962z_r6g9fgv19wvm0000gn/T/vscode-ipc-85e233d0-d9de-4606-81ee-ecaa9a85605a.sock
 # environment
 VSCODE_CWD = /
 # environment
@@ -56,13 +55,13 @@ ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.Uh5lvOZTJr/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.dFYU5YFcOe/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-PWD = /Users/margo/Documents/ritaturlay
+PWD = /Users/margo/Documents/ritaturlay/task2
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
@@ -92,7 +91,7 @@ MAKE_VERSION := 3.81
 # environment
 USER = margo
 # makefile
-.DEFAULT_GOAL := 
+.DEFAULT_GOAL := useful
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
@@ -104,7 +103,7 @@ TMPDIR = /var/folders/rp/h_bgcy2962z_r6g9fgv19wvm0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/margo/Library/Application Support/Code/1.55.2-main.sock
+VSCODE_IPC_HOOK = /Users/margo/Library/Application Support/Code/1.55.1-main.sock
 # makefile
 MAKEFLAGS = Rrqp
 # environment
@@ -112,7 +111,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.8971531.8971537
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.8653304.8653310
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
@@ -134,9 +133,9 @@ SUFFIXES :=
 # environment
 MAKELEVEL := 0
 # environment
-VSCODE_PID = 9422
+VSCODE_PID = 636
 # variable set hash-table stats:
-# Load=60/1024=6%, Rehash=0, Collisions=1/81=1%
+# Load=60/1024=6%, Rehash=0, Collisions=1/84=1%
 
 # Pattern-specific Variable Values
 
@@ -144,9 +143,9 @@ VSCODE_PID = 9422
 
 # Directories
 
-# . (device 16777222, inode 8324576): 12 files, no impossibilities.
+# . (device 16777224, inode 8524029): 11 files, no impossibilities.
 
-# 12 files, no impossibilities in 1 directories.
+# 11 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -154,15 +153,46 @@ VSCODE_PID = 9422
 
 # Files
 
+buildMain: main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 3):
+	gcc -o main main.c -std=c89 -lm
+	
+
 # Not a target:
 all:
 #  Command-line target.
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has not been updated.
- 
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+useful: buildTest test valgrind_check linter_check
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+buildTest: tests.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 6):
+	gcc -o tests -Dmain=_main main.c tests.c -std=c89 -pedantic -lm
+	
+
+# Not a target:
+main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 .SUFFIXES:
@@ -172,23 +202,43 @@ all:
 
 # Not a target:
 Makefile:
-#  A default, MAKEFILES, or -include/sinclude makefile.
 #  Implicit rule search has been done.
-#  File does not exist.
+#  Last modified 2021-04-08 12:13:16
 #  File has been updated.
-#  Failed to be updated.
+#  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+test:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 9):
+	./tests
+	
+
+linter_check:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 16):
+	cpp main.c
+	
+
+valgrind_check:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 12):
+	echo "fgh h" > input.txt
+	valgrind ./tests < input.txt
+	
+
 # Not a target:
-makefile:
-#  A default, MAKEFILES, or -include/sinclude makefile.
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has been updated.
-#  Failed to be updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+tests.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 .DEFAULT:
@@ -196,29 +246,28 @@ makefile:
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
-GNUmakefile:
-#  A default, MAKEFILES, or -include/sinclude makefile.
-#  Implicit rule search has been done.
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
 #  File does not exist.
-#  File has been updated.
-#  Failed to be updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 20):
+	rm -rf task2/
+	
 
 # files hash-table stats:
-# Load=6/1024=1%, Rehash=0, Collisions=0/17=0%
+# Load=14/1024=1%, Rehash=0, Collisions=0/33=0%
 # VPATH Search Paths
 
 # No `vpath' search paths.
 
 # No general (`VPATH' variable) search path.
 
-# # of strings in strcache: 0
-# # of strcache buffers: 0
-# strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
-# strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Apr 28 19:36:27 2021
+# Finished Make data base on Thu Apr 15 14:06:02 2021
 
  

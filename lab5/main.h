@@ -1,0 +1,1 @@
+char *dec_to_oct(char *s, int n);
