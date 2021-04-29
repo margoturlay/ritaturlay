@@ -29,7 +29,8 @@ int main() {
   list<int> list1;
   bool b = true;
   int res = 0, i = 1;
-  cout << "Enter number: ";
+   char s1[32];
+  cout << "Enter number in 10-s: ";
 
   while (true) {
     int i;
@@ -41,7 +42,7 @@ int main() {
     }
     list1.push_back(i);
   }
-  cout << "\n Your list: ";
+  cout << "\n Your data in list: ";
   showlist(list1);
   while (b) {
     if (list1.empty())
@@ -52,7 +53,6 @@ int main() {
       i *= 10;
     }
   }
-  char s1[32];
   cout << "Result: " << dec_to_oct(s1, res) << endl;
 
   return 0;
