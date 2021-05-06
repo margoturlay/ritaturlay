@@ -44,7 +44,9 @@ int main(void)
 }
  int get(Item * node,int n,int c)
 {
-       if(n != c)  return 0;
+       if(n != c)  return 1;
+       else 
+       return 0;
         return ((node->left)?get(node->left,n,c+1):0) + ((node->right)?get(node->right,n,c+1):0);
 }
  
