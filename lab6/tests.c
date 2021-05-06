@@ -28,7 +28,7 @@ void test()
   lvl(root);
   fclose(fp);  
   int t = 0, l = 0;
-  assert(get(root, t++, 0) == 0));
+  assert(get(root, t, 0) == 0));
      printf("All tests are passed.\n");
 }
 #undef main
