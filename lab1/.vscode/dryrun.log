@@ -1,0 +1,9 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/margo/Documents/ritaturlay/lab1'
+gcc -o tests -Dmain=_main main.c tests.c -std=c89 -pedantic -lm
+./tests
+echo "20" > input.txt
+valgrind ./tests < input.txt
+cpp main.c
+make: Leaving directory `/Users/margo/Documents/ritaturlay/lab1'
+ 
